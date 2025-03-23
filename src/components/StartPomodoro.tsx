@@ -1,5 +1,6 @@
 import React from 'react'
+import './StartPomodoro.css'
 
 export const StartPomodoro = () => {
-  return <button>Start Pomodoro</button>
+  return <a className="start">Start</a>
 }
