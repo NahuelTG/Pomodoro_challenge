@@ -1,48 +1,89 @@
-# Astro Starter Kit: Basics
+# 🍅 Webcito Challenge - Pomodoro Tracker
 
-```sh
-npm create astro@latest -- --template basics
-```
+Bienvenido al reto **Pomodoro Tracker**, parte de los desafíos de **Webcito Challenges**. En este reto, desarrollarás tu propia versión del método Pomodoro, un técnica de administración del tiempo que te ayudará a mejorar tu enfoque y productividad.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 📝 Descripción del Proyecto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Cuando tu energía se concentra en una sola cosa, te vuelves más poderoso. Pomodoro es un método que permite mejorar la administración del tiempo dedicado a una actividad. Tu reto será desarrollar tu propia versión de Pomodoro dándole un diseño único y diferenciador.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+🔗 **Diseño en Figma**: [Enlace al diseño](https://www.figma.com/design/R0uOaMMuxcVBvdcDhG72uY/Pomodoro_Tracker?node-id=0-1&t=Zh19H6CjqYnSIzDv-1)
 
-## 🚀 Project Structure
+## 📌 Requisitos
 
-Inside of your Astro project, you'll see the following folders and files:
+- Estilo libre. Lleva el diseño al código utilizando tu framework favorito o con HTML y CSS, sin ninguna limitación.
+- El Pomodoro siempre deberá iniciar con una cuenta regresiva de **25 minutos**.
+- Al iniciar el Pomodoro, el botón de **Iniciar Pomodoro** deberá cambiar su texto.
+- Al iniciar el Pomodoro, el botón de **Pausar Pomodoro** se habilitará.
+- Al pausar el Pomodoro, el botón deberá cambiar su texto.
+- El usuario podrá iniciar un **Break** mientras está en un Pomodoro. Al hacer clic, la interfaz cambiará a la vista de **Break** con una cuenta regresiva de **5 minutos**.
+- Después de completar un Pomodoro o un Break, se deberá mostrar un contador con el número de Pomodoros/Breaks realizados.
+- La aplicación debe ser **responsive**, cubriendo todas las resoluciones del diseño.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## 🎯 Objetivos principales
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Para completar el reto, marca los siguientes hitos:
 
-## 🧞 Commands
+- [ ] Implementar la cuenta regresiva de **25 minutos** para Pomodoro y **5 minutos** para Break.
+- [ ] Cambiar el texto del botón de **Iniciar/Pausar Pomodoro** según el estado del temporizador.
+- [ ] Permitir que el usuario inicie un **Break** mientras está en un Pomodoro.
+- [ ] Mostrar un **contador** de Pomodoros/Breaks completados.
+- [ ] Asegurar que el diseño sea **responsive**.
+- [ ] Implementar una forma de **desplegar** la aplicación en línea.
 
-All commands are run from the root of the project, from a terminal:
+## 🚀 Objetivos secundarios
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Si quieres llevar tu implementación al siguiente nivel, intenta cumplir con estos retos adicionales:
 
-## 👀 Want to learn more?
+- [ ] Implementar notificaciones sonoras al finalizar cada ciclo de Pomodoro o Break
+- [ ] Añadir un historial de sesiones completadas utilizando almacenamiento local (localStorage)
+- [ ] Optimizar el rendimiento para conseguir un puntaje superior a 90 en PageSpeed Insights
+- [ ] Utilizar patrones avanzados de JavaScript como módulos, closures o el patrón Observer
+- [ ] Implementar un tema oscuro/claro con CSS variables y JavaScript
+- [ ] Crear tests unitarios para las funciones principales de la aplicación
+- [ ] Optimizar la aplicación para funcionar sin conexión (PWA)
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🚀 Pasos para participar
+
+1. **Hacer fork** del repositorio de Webcito Challenges.
+2. **Crear una carpeta** dentro del repositorio con el nombre del reto.
+3. **Desarrollar el reto** siguiendo los requisitos.
+4. **Realizar un deploy** para que el proyecto pueda visualizarse en línea.
+5. **Subir los cambios** a tu fork del repositorio.
+6. **Hacer un Pull Request (PR)** al repositorio principal en la carpeta del reto.
+7. **Revisar y responder feedback** si algún colaborador hace observaciones.
+
+## 📝 Formato del Pull Request
+
+Para mantener la organización del repositorio, sigue el siguiente formato al hacer un PR:
+
+**Título:** `[Reto 2] - Pomodoro Challenge`
+
+**Descripción:**
+
+- **Nombre:** _[Tu nombre o usuario de GitHub]_
+- **Herramientas utilizadas:** _[Ejemplo: JavaScript, React, Vue, TailwindCSS.]_
+- **Deploy:** _[Enlace del deploy]_
+- **Checklist de hitos completados:**
+  - [x] Hito 1 - Implementar cuenta regresiva de Pomodoro y Break.
+  - [x] Hito 2 - Cambiar el texto del botón según el estado.
+  - [x] Hito 3 - Implementar la vista de Break.
+  - [ ] Hito opcional - _(Si aplica)_
+
+## 🔍 Revisión de código y feedback
+
+Para mejorar juntos:
+
+- Revisa y prueba los códigos de otros participantes.
+- Deja comentarios constructivos en los PRs.
+- Comparte recursos y sugerencias de mejora.
+
+<!-- ## 📚 Recursos recomendados
+- [MDN Web Docs](https://developer.mozilla.org/)
+- [FreeCodeCamp](https://www.freecodecamp.org/)
+- [CSS-Tricks - Flexbox y Grid](https://css-tricks.com/) -->
+
+---
+
+Recuerda: **La mejor forma de aprender a programar es programando**. 💻🔥
+
+¡Diviértete creando tu Pomodoro Tracker! 🍅⏳
