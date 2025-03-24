@@ -1,0 +1,9 @@
+.contador {
+  display: grid;
+  gap: 24px;
+}
+
+.contador__progress {
+  width: 244px;
+  height: 244px;
+}

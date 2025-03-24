@@ -1,6 +1,14 @@
 import React from 'react'
 import './StartPomodoro.css'
 
-export const StartPomodoro = () => {
-  return <a className="start">Start</a>
+interface ButtonProps {
+  onStart?: () => void
+}
+
+export const StartPomodoro: React.FC<ButtonProps> = ({ onStart }) => {
+  return (
+    <a className="start" onClick={onStart}>
+      Start
+    </a>
+  )
 }
