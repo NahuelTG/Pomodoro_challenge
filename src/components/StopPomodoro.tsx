@@ -8,7 +8,7 @@ interface ButtonProps {
 export const StopPomodoro: React.FC<ButtonProps> = ({ onStop }) => {
   return (
     <a className="stop" onClick={onStop}>
-      Stop Pomodoro
+      Pause Pomodoro
     </a>
   )
 }

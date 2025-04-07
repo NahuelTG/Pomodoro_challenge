@@ -1,0 +1,78 @@
+---
+// src/components/Elipses.astro
+---
+
+<div class="elipses-container">
+  <svg class="elipse elipse-top-right" xmlns="http://www.w3.org/2000/svg" width="360" height="365" viewBox="0 0 360 365" fill="none">
+    <g filter="url(#filter0_dd_8_556)">
+      <circle cx="220" cy="140" r="200" fill="#172030"></circle>
+    </g>
+    <defs>
+      <filter id="filter0_dd_8_556" x="0" y="-80" width="445" height="445" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+        <feOffset dx="-4" dy="-4"></feOffset>
+        <feGaussianBlur stdDeviation="8"></feGaussianBlur>
+        <feColorMatrix type="matrix" values="0 0 0 0 0.2875 0 0 0 0 0.2875 0 0 0 0 0.2875 0 0 0 0.4 0"></feColorMatrix>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8_556"></feBlend>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+        <feOffset dx="9" dy="9"></feOffset>
+        <feGaussianBlur stdDeviation="8"></feGaussianBlur>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.24 0"></feColorMatrix>
+        <feBlend mode="normal" in2="effect1_dropShadow_8_556" result="effect2_dropShadow_8_556"></feBlend>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_8_556" result="shape"></feBlend>
+      </filter>
+    </defs>
+  </svg>
+
+  <svg class="elipse elipse-bottom-left" xmlns="http://www.w3.org/2000/svg" width="365" height="360" viewBox="0 0 365 360" fill="none">
+    <g filter="url(#filter0_dd_8_557)">
+      <circle cx="140" cy="220" r="200" fill="#1A2538"></circle>
+    </g>
+    <defs>
+      <filter id="filter0_dd_8_557" x="-80" y="0" width="445" height="445" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+        <feOffset dx="-4" dy="-4"></feOffset>
+        <feGaussianBlur stdDeviation="8"></feGaussianBlur>
+        <feColorMatrix type="matrix" values="0 0 0 0 0.2875 0 0 0 0 0.2875 0 0 0 0 0.2875 0 0 0 0.4 0"></feColorMatrix>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8_557"></feBlend>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+        <feOffset dx="9" dy="9"></feOffset>
+        <feGaussianBlur stdDeviation="8"></feGaussianBlur>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.24 0"></feColorMatrix>
+        <feBlend mode="normal" in2="effect1_dropShadow_8_557" result="effect2_dropShadow_8_557"></feBlend>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_8_557" result="shape"></feBlend>
+      </filter>
+    </defs>
+  </svg>
+</div>
+
+<style>
+  .elipses-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .elipse {
+    position: absolute;
+    max-width: 40vw;
+    height: auto;
+    opacity: 0.5;
+  }
+
+  .elipse-top-right {
+    top: 0;
+    right: 0;
+    transform: translate(40%, -40%);
+  }
+
+  .elipse-bottom-left {
+    bottom: 0;
+    left: 0;
+    transform: translate(-10%, 10%);
+  }
+</style>
