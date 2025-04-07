@@ -8,7 +8,7 @@ interface ButtonProps {
 export const StartPomodoro: React.FC<ButtonProps> = ({ onStart }) => {
   return (
     <a className="start" onClick={onStart}>
-      Start
+      Start Pomodoro
     </a>
   )
 }
