@@ -1,5 +1,5 @@
 ---
-// src/components/Elipses.astro
+
 ---
 
 <div class="elipses-container">
@@ -15,7 +15,6 @@
         <feGaussianBlur stdDeviation="8"></feGaussianBlur>
         <feColorMatrix type="matrix" values="0 0 0 0 0.2875 0 0 0 0 0.2875 0 0 0 0 0.2875 0 0 0 0.4 0"></feColorMatrix>
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8_556"></feBlend>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
         <feOffset dx="9" dy="9"></feOffset>
         <feGaussianBlur stdDeviation="8"></feGaussianBlur>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.24 0"></feColorMatrix>
@@ -37,7 +36,6 @@
         <feGaussianBlur stdDeviation="8"></feGaussianBlur>
         <feColorMatrix type="matrix" values="0 0 0 0 0.2875 0 0 0 0 0.2875 0 0 0 0 0.2875 0 0 0 0.4 0"></feColorMatrix>
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8_557"></feBlend>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
         <feOffset dx="9" dy="9"></feOffset>
         <feGaussianBlur stdDeviation="8"></feGaussianBlur>
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.24 0"></feColorMatrix>
@@ -50,15 +48,16 @@
 
 <style>
   .elipses-container {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     pointer-events: none;
+    z-index: -1;
   }
 
   .elipse {
-    position: absolute;
-    max-width: 40vw;
+    position: fixed;
+    width: 35vw;
     height: auto;
     opacity: 0.5;
   }
@@ -66,12 +65,10 @@
   .elipse-top-right {
     top: 0;
     right: 0;
-    transform: translate(40%, -40%);
   }
 
   .elipse-bottom-left {
     bottom: 0;
     left: 0;
-    transform: translate(-10%, 0%);
   }
 </style>
