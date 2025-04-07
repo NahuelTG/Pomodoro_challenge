@@ -3,7 +3,7 @@
   padding: 12px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  margin-top: 16px;
   align-self: stretch;
   border-radius: 8px;
   background: var(--Button, #172030);
@@ -18,14 +18,33 @@
   font-weight: 500;
   line-height: 16px; /* 100% */
   cursor: pointer;
-  opacity: 0.2;
 }
 
-.after_start {
-  border-radius: 8px;
+.start {
+  display: flex;
+  width: 244px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 
+  border-radius: 8px;
   background: var(--Button, #172030);
 
   /* Shadow */
   box-shadow: 9px 9px 16px 0px rgba(0, 0, 0, 0.24), -4px -4px 16px 0px rgba(73, 73, 73, 0.4);
+  /* Button */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 100% */
+  color: var(--White, #fff);
+  width: 196px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.stop.inactive {
+  opacity: 0.2;
+  pointer-events: none;
 }
